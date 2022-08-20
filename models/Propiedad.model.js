@@ -6,7 +6,10 @@ const propiedadSchema = new Schema(
    nombre: {
       type: String,
     },
+
     ubicacion: String,
+
+    imagen: String,
   },
   {
     timestamps: true,
