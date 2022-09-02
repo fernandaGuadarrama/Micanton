@@ -4,9 +4,13 @@ body {
 }
 
 a {
-  color: #00b7ff;
+  color: #01090c;
 }
 
 h1 {
   color: 15px;
+}
+
+.propiedades {
+  padding-top: 100px;
 }
