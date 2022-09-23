@@ -1,23 +1,121 @@
-<a href="/">
-  <button> Inicio </button>
-</a>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-link navbar-light ">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
 
-<h1>COMPRAR</h1>
-  <h2>Propiedades en Venta</h2>
+    <!-- Navbar brand -->
+    <img src="../images/logo.svg" >
+    <a class="navbar-brand" href="/" Style="font-family: Pathway Gothic One; font-size:x-large">TE VENDO MI CANTÓN</a>
+    <!-- Toggle button -->
+    <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
 
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-{{!-- {{#each todasLasPropiedades}} --}}
-  <div class="propiedades">
-    <img name="{{imagen}}" src="https://definicion.de/wp-content/uploads/2011/01/casa-1.jpg" >
-    <h1 name="{{nombre}}"> Casa Remodelada</h1>
-    <h3 name="{{ubicacion}}"> Guadalajara, Mx.</h3>
+        <!-- Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="/ventas">Vender Propiedad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/compras">Comprar Propiedad</a>
+        </li>
+      </ul>
+
+    </div>
   </div>
+  <!-- Container wrapper -->
+</nav>
+{{!-- Header --}}
+<center><img src="../images/headerCompras.png" class="img-fluid" alt="Te vendo mi cantón" style="padding:none"></center>
+<div class="inicio">
+    <a href="/">
+      <button class="btn btn-dark">Inicio</button>
+    </a>
+</div>
+<div class="container">
+  <div class="container text-center">
+    {{!-- {{#each todasLasPropiedades}} --}}
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://i.pinimg.com/564x/92/4d/d3/924dd3194102e0221f02a9e9ace1e832.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" name="{{nombre}}">Propiedad en venta en Narvarte</h5>
+            <p class="card-text" >Departamento de dos recámaras en excelente ubicación, ideal para familias pequeñas</p>
+         {{!-- {{/each}} --}}
+          <a href="/compras/{{_id}}">
+            <button class="btn btn-dark"> Detalles de la Propiedad</button>
+          </a>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted" name="{{ubicacion}}">Narvarte, Benito Juárez, CDMX</small>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-{{!-- {{/each}} --}}
-<a href="/compras/{{_id}}">
-  <button> Detalles de la Propiedad</button>
+
+
+
+{{!-- Whatsapp Button --}}
+<a>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://wa.me/5255 2545 0911" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
 </a>
+{{!-- Footer --}}
+
+  <footer class="bg-light text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #3b5998;"
+        href="https://www.facebook.com/tevendomicanton"
+        role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <!-- Google -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #dd4b39;"
+        href="#!"
+        role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-primary btn-floating m-1"
+        style="background-color: #ac2bac;"
+        href="https://www.instagram.com/tevendomicanton/"
+        role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Te vendo mi cantón</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+  
 
 
 
